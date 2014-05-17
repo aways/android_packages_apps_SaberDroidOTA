@@ -32,9 +32,9 @@ import com.paranoid.paranoidota.updater.Server;
 import com.paranoid.paranoidota.updater.UpdatePackage;
 import com.paranoid.paranoidota.updater.Updater.PackageInfo;
 
-public class PaServer implements Server {
+public class JescoServer implements Server {
 
-    private static final String URL = "http://api.paranoidandroid.co/updates/%s";
+    private static final String URL = "http://173.234.148.50/upload/%s";
 
     private String mDevice = null;
     private String mError = null;

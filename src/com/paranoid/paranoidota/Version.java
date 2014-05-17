@@ -45,7 +45,7 @@ import java.io.Serializable;
  */
 public class Version implements Serializable {
 
-    private final String[] STATIC_REMOVE = { ".zip", "pa_" };
+    private final String[] STATIC_REMOVE = { ".zip", "psd_" };
     private final String[] PHASES = { "ALPHA", "BETA", "RELEASE CANDIDATE", "GOLD" };
 
     private static final String SEPARATOR = "-";
