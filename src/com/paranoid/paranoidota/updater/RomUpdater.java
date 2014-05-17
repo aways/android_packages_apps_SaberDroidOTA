@@ -24,13 +24,13 @@ import android.content.Context;
 import com.paranoid.paranoidota.R;
 import com.paranoid.paranoidota.Utils;
 import com.paranoid.paranoidota.Version;
+import com.paranoid.paranoidota.updater.server.JescoServer;
 import com.paranoid.paranoidota.updater.server.LegacyServer;
-import com.paranoid.paranoidota.updater.server.HsbServer;
 
 public class RomUpdater extends Updater {
 
     public RomUpdater(Context context, boolean fromAlarm) {
-        super(context, new Server[] { new HsbServer(), new LegacyServer(context, true) }, fromAlarm);
+        super(context, new Server[] { new JescoServer(), new LegacyServer(context, true) }, fromAlarm);
     }
 
     @Override
